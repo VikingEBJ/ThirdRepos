@@ -16,6 +16,5 @@ namespace MyNameSpace
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Ticketing.TicketsForm());
-        }
     }
 }
