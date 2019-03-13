@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+//using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -48,6 +48,15 @@ namespace Ticketing
 
             mTicketPrice.calculatePrice();
             lblAmount.Text = System.Convert.ToString(mTicketPrice.AmountDue);
+        }
+        private void chkDiscount_CheckedChanged(object sender, EventArgs e)
+        {
+            chkChild.Checked = false;
+        }
+
+        private void chkChild_CheckedChanged(object sender, EventArgs e)
+        {
+            chkDiscount.Checked = false;
         }
     }
 }

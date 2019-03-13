@@ -57,6 +57,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(91, 20);
             this.txtQuantity.TabIndex = 1;
+            this.txtQuantity.Text = "12";
             // 
             // lblAmountDue
             // 
@@ -84,6 +85,7 @@
             this.chkDiscount.TabIndex = 5;
             this.chkDiscount.Text = "Senior / Student";
             this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscount.CheckedChanged += new System.EventHandler(this.chkDiscount_CheckedChanged);
             // 
             // radBalcony
             // 
@@ -148,6 +150,7 @@
             this.chkChild.TabIndex = 11;
             this.chkChild.Text = "Child";
             this.chkChild.UseVisualStyleBackColor = true;
+            this.chkChild.CheckedChanged += new System.EventHandler(this.chkChild_CheckedChanged);
             // 
             // TicketsForm
             // 
